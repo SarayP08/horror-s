@@ -6,7 +6,7 @@
     
     
     body {
-        background-image: url(/img_index/fondo.png);
+        background-image: url(./img_index/fondo.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
@@ -284,14 +284,14 @@
 
     @font-face {
         font-family: 'aerospace';
-        src: url('/aerospace/Unispace\ Rg.otf') format('opentype'); 
+        src: url('./aerospace/Unispace\ Rg.otf') format('opentype'); 
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'determination';
-        src: url('/determination/determination.ttf') format('truetype'); 
+        src: url('./determination/determination.ttf') format('truetype'); 
         font-weight: normal;
         font-style: normal;
     }
