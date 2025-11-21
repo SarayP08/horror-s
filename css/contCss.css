@@ -1,0 +1,418 @@
+    /*ÁREA GENERAL DEL BODY*/
+
+    * {
+    box-sizing: border-box;   
+    }
+    
+    
+    body {
+        background-image: url(/img_index/fondo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+    }
+
+    /*--------------------- APARTADO SUPERIOR DE LA PÁGINA -------------------- */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 1.5rem 4rem;
+        position: relative;
+        background: linear-gradient(
+        to right,
+        rgba(5, 0, 10, 0.9),
+        rgba(30, 5, 40, 0.7)
+        );
+    }
+
+
+    #icon_menu {
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        display: none; 
+    }
+
+    #menu_desplegable {
+        display: block;
+        position: static;
+        margin-left: 0;
+        background-color: transparent;
+        padding: 0;
+        z-index: 1;
+    }
+
+    #menu_desplegable ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+    }
+
+    #menu_desplegable li {
+        color: white;
+        font-family: 'aerospace';
+        font-size: 18px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+    }
+
+
+    #menu_desplegable li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background-color: #e815f3;
+        transition: width 0.2s ease-out;
+    }
+
+    #menu_desplegable li:hover::after {
+        width: 100%;
+    }
+
+
+    #icon_lupa,
+    #icon_user {
+        height: 40px;
+        width: 40px;
+        margin-top: 0;
+    }
+
+
+    #icon_lupa {
+    margin-left: auto;  
+    }
+
+    #busqueda {
+        height: 34px;
+        border-radius: 999px;
+        margin-top: 0;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 0 12px;
+        width: 16em;
+        font-family: 'aerospace';
+        background-color: #150915b0;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+    }
+
+    #busqueda::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9em;   
+    }
+
+
+    #icon_user {
+    margin-left: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: inherit;
+        color: white;
+    }
+    /*--------------------------- CONTENIDO CENTRAL DE LA PÁGINA ----------------- */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: 'determination';
+        font-size: 60px;
+        text-align: center;
+    }
+
+    #formularioContacto {
+        width: 860px;
+        height: 470px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #01000167;
+        border-radius: 10px;
+    }
+
+    #formularioCollabs {
+        width: 860px;
+        height: 670px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #01000167;
+        border-radius: 10px;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        row-gap: 35px;
+        column-gap: 20px;
+        font-size: 25px;
+        color: white;
+        font-family: 'aerospace';
+    }
+
+    textarea {
+        border-radius: 5px;
+    }
+
+    input {
+        width: 180px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-family: 'aerospace';
+        background-color: rgb(250, 250, 248);
+    }
+
+    #boton {
+        background-color: #000000;
+        grid-column: 1 / -1;
+        justify-self: center;
+        height: 45px;
+        color:#fffaff
+    }
+
+
+    h3 {
+         color: white;
+        font-family: 'determination';
+        font-size: 30px;
+    }
+
+    img {
+        width: 120px;
+        margin-bottom: 60px;
+    }
+
+    .caixas {
+        width: 860px;
+        height: 670px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #01000167;
+        border-radius: 10px;
+    }
+
+    .icon, .icon1, .icon2, .icon3 {
+        color: white;
+        height: 120px;
+    }
+
+    .insider, .insider1, .insider2, .insider3, .insider4 {
+        display: none;
+        padding: 10px;
+        background-color: #fffffc;
+        border-radius: 5px;
+        margin-top: 5px;
+        font-family: 'lemonM';
+        font-size: 15px;
+    }
+    /*------------------------------- FOOTER ----------------------------------*/
+
+    footer {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;          
+        background-color: #010001b0; 
+        padding: 1.5em;
+        border-radius: 10px 10px 0 0;
+        color: rgb(255, 240, 211);
+        text-align: center;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+        font-family: 'aerospace';
+        font-size: 20px;
+        display: inline-block;   
+        padding: 0 10px;
+    }
+
+
+    /*------------------------------- FUENTES DE TEXTO ---------------------*/
+
+    @font-face {
+        font-family: 'aerospace';
+        src: url('/aerospace/Unispace\ Rg.otf') format('opentype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'determination';
+        src: url('/determination/determination.ttf') format('truetype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'evil';
+        src: url('/fuente_evil_empire/Evil\ Empire.otf') format('opentype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+    @font-face {
+        font-family: 'lemonM';
+        src: url('/lemon_milk/LEMONMILK-Medium.otf') format('opentype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+
+    /*----------------------------- MENU RESPONSIVE ---------------- */
+
+    @media (max-width: 1024px) {
+        #icon_menu {
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+    
+        header {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1em;
+        }
+    
+        #menu_desplegable {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 1rem;
+            background-color: #1f0f1fb0;
+            border-radius: 8px;
+            padding: 10px 0;
+            z-index: 999;
+        }
+    
+        #menu_desplegable ul {
+            display: block;
+        }
+    
+        #menu_desplegable li {
+            padding: 10px 20px;
+        }
+    
+        main h1 {
+            font-size: 2.3em;
+            text-align: center;
+        }
+    
+        #formularioContacto,
+        #formularioCollabs {
+            width: 90%;
+            max-width: 600px;
+            margin: 1.5rem auto;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        input, textarea {
+            width: 100%;
+            font-size: 1em;
+        }
+
+        .caixas {
+            width: 90%;
+            margin: 2rem auto;
+        }
+    
+        footer {
+            grid-template-columns: 1fr;
+            row-gap: .5em;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        main h1 {
+            font-size: 1.9em;
+            margin-top: 1.5em;
+        }
+    
+        #formularioContacto,
+        #formularioCollabs {
+            width: 95%;
+            padding: 1em;
+        }
+    
+        input, textarea {
+            font-size: .9em;
+            padding: .6em;
+        }
+    
+        #boton {
+            width: 100%;
+            font-size: 1em;
+        }
+    
+        h3.contenido {
+            font-size: 1em;
+        }
+    
+        .caixas {
+            width: 95%;
+        }
+    
+        body {
+            padding-bottom: 7em;
+        }
+    
+        footer {
+            flex-direction: column;
+            text-align: center;
+            gap: .4em;
+            padding: .8em;
+        }
+    
+        footer p {
+            font-size: .85em;
+        }
+    
+        #icon_menu {
+            width: 55px;
+            height: 55px;
+        }
+    
+        #busqueda {
+            width: 11em;
+            font-size: .8em;
+        }
+    }
+    
